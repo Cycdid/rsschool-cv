@@ -1,4 +1,4 @@
-# Didenko Susanna
+# Didenko Susanna [![FastPic.Ru](https://i116.fastpic.org/thumb/2021/1223/94/270eb523df5ab78bae63db143582db94.jpeg)](https://fastpic.org/view/116/2021/1223/270eb523df5ab78bae63db143582db94.jpg.html)
 ## Contacts: 
 * Discord: Сусанна@CycDid
 * E-mail: didenkosusanna@gmail.com
