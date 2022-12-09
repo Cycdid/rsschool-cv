@@ -6,7 +6,7 @@
 * __Location__: Thurles, Irish
 * __Phone__: +353857371699
 * __Email__: susannadidenko@gmail.com
-* [__GitHub__:](https://github.com/Cycdid)
+* [__GitHub__](https://github.com/Cycdid)
 
 
 ## **About Me**
