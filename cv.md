@@ -1,25 +1,25 @@
-# name __Susanna Didenko__
+# __Susanna Didenko__
 *********************************************************************
 
 
-## [6][**Contacts**][1]
+## **Contacts**
 * __Location__: Thurles, Irish
 * __Phone__: +353857371699
 * __Email__: susannadidenko@gmail.com
-* [__GitHub__:] (https://github.com/Cycdid)
+* [__GitHub__:](https://github.com/Cycdid)
 
 
-## [1][**About Me**][2]
+## **About Me**
 I have good interpersonal skills, am an excellent team worker and very willing to learn and develop new skills. I am happy to acquire new knowledge and skills.
 
 
-## [2][**Skills**][3]
+## **Skills**
 * HTML (BEM/FLEX)
 * CSS/SASS
 * Git
 
 
-## [3][**Code Example**][4]
+## **Code Example**
 ```
 function sum(a, b) {
   return a + b;
@@ -31,13 +31,13 @@ alert( result );
 ```
 
 
-## [4][**Experience**][5]
+## **Experience**
 * **University:** Mariupol University of Humanities 
 * **Courses:**
-+ [Code Basics](https://code-basics.com/ru/languages/html)
-+ [Нетология](https://netology.ru/programs/html-css-base)
-+ ["CSS" Udemy](https://www.udemy.com/ru/topic/css/)
+  + [Code Basics](https://code-basics.com/ru/languages/html)
+  + [Нетология](https://netology.ru/programs/html-css-base)
+  + ["CSS" Udemy](https://www.udemy.com/ru/topic/css/)
 
 
-## [5][**English**][6]
+## **English**
 A2
