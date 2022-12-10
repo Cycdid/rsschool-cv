@@ -1,3 +1,5 @@
+![foto_myself](/ava/ava.webp "ava")
+
 # __Susanna Didenko__
 *********************************************************************
 
@@ -7,6 +9,7 @@
 * __Phone__: +353857371699
 * __Email__: susannadidenko@gmail.com
 * __GitHub__: [**Cycdid**](https://github.com/Cycdid)
+* __Discord__: **susanna#2096**
 
 
 ## **About Me**
@@ -21,13 +24,14 @@ I have good interpersonal skills, am an excellent team worker and very willing t
 
 ## **Code Example**
 ```
-function sum(a, b) {
-  return a + b;
+function multiply (a, b) {
+return a * b
 }
 ```
+
+
 ```
-let result = sum(1, 2);
-alert( result );
+const multiply = (a, b) => a * b
 ```
 
 
