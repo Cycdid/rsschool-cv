@@ -1,5 +1,3 @@
-![foto_myself](ava/ava.webp "ava")
-
 # __Susanna Didenko__
 *********************************************************************
 
@@ -36,6 +34,7 @@ const multiply = (a, b) => a * b
 
 
 ## **Experience**
+### **Education**
 * **University:** Mariupol University of Humanities 
 * **Courses:**
   + [Code Basics](https://code-basics.com/ru/languages/html)
@@ -43,5 +42,5 @@ const multiply = (a, b) => a * b
   + ["CSS" Udemy](https://www.udemy.com/ru/topic/css/)
 
 
-## **English**
-A2
+### **English**
+A1
