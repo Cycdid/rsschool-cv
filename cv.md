@@ -1,4 +1,4 @@
-![foto_myself](/ava/ava.webp "ava")
+![foto_myself](ava/ava.webp "ava")
 
 # __Susanna Didenko__
 *********************************************************************
