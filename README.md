@@ -1,1 +1,1 @@
-https://cycdid.github.io/rsschool-cv/index.html
+https://cycdid.github.io/rsschool-cv/
