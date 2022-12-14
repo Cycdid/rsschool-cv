@@ -1,0 +1,10 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font: 400 16px/1.5 'Alegreya Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
