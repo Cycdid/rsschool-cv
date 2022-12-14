@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CV</title>
 </head>
+
 <body>
-	<p>Susanna Didenko</p>
+	<div class="wrapper">
+		<div class="container">
+			<header class="header">
+				<div class="header__avatar">
+					<img src="./img/ava.png" width="100" height="124" alt="avatar">
+				</div>
+				<h1 class="headline">Susanna Didenko</h1>
+				<h2 class="heading">Frontend developer</h2>
+				<nav class="header__menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#one" class="menu__link">Contacts</a></li>
+						<li class="menu__item"><a href="#two" class="menu__link">Skills</a></li>
+						<li class="menu__item"><a href="#three" class="menu__link">About Me</a></li>
+						<li class="menu__item"><a href="#four" class="menu__link">Code example</a></li>
+						<li class="menu__item"><a href="#five" class="menu__link">Experience</a></li>
+						<li class="menu__item"><a href="#six" class="menu__link">Certificat</a></li>
+						<li class="menu__item"><a href="#seven" class="menu__link">English</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="main">
+				<section class="section">
+					<div class="contacts">
+						<h3 class="subtitle" id="one">contacts</h3>
+						<ul class="contacts__list">
+							<li class="list__item"><span class="b">Location:</span> Thurles, Irish </li>
+							<li class="list__item"><span class="b">Phone:</span> <a class="item__link" href="tel:+353857371699">+353857371699</a></li>
+							<li class="list__item"><span class="b">Email:</span> <a class="item__link" href="mailto:susannadidenko@gmail.com">Email Me</a></li>
+							<li class="list__item"><span class="b">GitHub:</span> <a class="item__link" href="https://github.com/Cycdi/rsschool-cv.git">Cycdid</a></li>
+							<li class="list__item"><span class="b">Discord:</span> susanna#2096</li>
+						</ul>
+					</div>
+				</section>
+				<section class="section">
+						<h3 class="subtitle" id="two">Skills</h3>
+						<ul class="skills__list">
+							<li class="list__item">HTML (BEM / Flex)</li>
+							<li class="list__item">CSS (SASS / Less)</li>
+							<li class="list__item">Git</li>
+						</ul>
+				</section>
+				<section class="section">
+					<h3 class="subtitle" id="three">About Me</h3>
+					<p class="text">
+						I have good interpersonal skills, am an excellent team worker and very willing to learn and develop new
+						skills. I am happy to acquire new knowledge and skills.
+					</p>
+				</section>
+				<section class="section">
+					<h3 class="subtitle" id="four">Code example</h3>
+					<code>
+						<pre>
+							function multiply (a, b) {
+							return a * b
+							} 
+					
+							const multiply = (a, b) => a * b
+						</pre>
+					</code>
+				</section>
+				<section class="section">
+					<h3 class="subtitle" id="five">Experience</h3>
+					<h4 class="minititle">Education</h4>
+					<ul class="education__list">
+						<li class="list__item"><span class="b">University:</span> Mariupol University of Humanities</li>
+						<li class="list__item"><span class="b">Courses:</span>
+							<ul class="education__sub-list">
+								<li class="list__item"><a class="item__link" href="">Code Basics</a></li>
+								<li class="list__item"><a class="item__link" href="">Нетология</a></li>
+								<li class="list__item"><a class="item__link" href="">"CSS" Udemy</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="section">
+					<h3 class="subtitle" id="six">Certificats</h3>
+						<p class="text">I am a permanent student of the course:</p>
+						<ul class="certificats__list">
+							<li class="list__item"><a class="item__link" href="./certificate/Certificate.pdf">"ЦИФРОВІ КОМУНІКАЦІЇ В ГЛОБАЛЬНОМУ ПРОСТОРІ"</a></li>
+							<li class="list__item"><a class="item__link" href="./certificate/Certificate (2).pdf">"Нативна реклама"</a></li>
+							<li class="list__item"><a class="item__link" href="https://loftschool.com/diploma/MY1656400224/en/pdf">"Основы вёрстки"</a></li>
+						</ul>
+				</section>
+				<section class="section">
+					<h3 class="subtitle" id="seven">English</h3>
+						<div class="english__progress">
+							A1 progress:
+							<ul class="progress__list">
+								<li class="list__item">Books (Reading in English)</li>
+								<li class="list__item">Courses (English courses)</li>
+								<li class="list__item">Communication (Communication with native English speakers)</li>
+							</ul>
+						</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+
+	</footer>
 </body>
+
 </html>
