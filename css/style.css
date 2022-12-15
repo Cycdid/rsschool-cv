@@ -3,8 +3,6 @@ html, body {
 }
 
 body {
-	font: 400 16px/1.5 'Alegreya Sans', sans-serif;
-	-webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font: 400 16px/1.5 'Verdana', sans-serif;
 }
 
