@@ -17,34 +17,37 @@
 			<div class="container">
 				<header class="header">
 					<div class="header__content">
-						<img class="header__avatar" src="./img/ava.png" width="100" height="124" alt="avatar">
+						<div class="header__wrapp-img">
+							<img class="header__img" src="./img/ava.webp" alt="avatar">
+						</div>
 						<h1 class="headline">Susanna Didenko</h1>
 						<h2 class="heading">Frontend developer</h2>
 					</div>
 					<nav class="header__menu">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#one" class="menu__link">Contacts</a>
-								<div class="separator">/</div>
+							<li class="menu__item">
+								<a href="#one" class="menu__link">Contacts</a>
 							</li>
-							<li class="menu__item"><a href="#two" class="menu__link">About Me</a>
-								<div class="separator">/</div>
+							<li class="menu__item">
+								<a href="#two" class="menu__link">About Me</a>
 							</li>
-							<li class="menu__item"><a href="#three" class="menu__link">Work experience</a>
-								<div class="separator">/</div>
+							<li class="menu__item">
+								<a href="#three" class="menu__link">Work experience</a>
 							</li>
-							<li class="menu__item"><a href="#four" class="menu__link">Skills</a>
-								<div class="separator">/</div>
+							<li class="menu__item">
+								<a href="#four" class="menu__link">Skills</a>
 							</li>
-							<li class="menu__item"><a href="#five" class="menu__link">Code example</a>
-								<div class="separator">/</div>
+							<li class="menu__item">
+								<a href="#five" class="menu__link">Code example</a>
 							</li>
-							<li class="menu__item"><a href="#six" class="menu__link">Experience</a>
-								<div class="separator">/</div>
+							<li class="menu__item">
+								<a href="#six" class="menu__link">Experience</a>
 							</li>
-							<li class="menu__item"><a href="#seven" class="menu__link">Certificat</a>
-								<div class="separator">/</div>
+							<li class="menu__item">
+								<a href="#seven" class="menu__link">Certificat</a>
 							</li>
-							<li class="menu__item"><a href="#eight" class="menu__link">English</a>
+							<li class="menu__item">
+								<a href="#eight" class="menu__link">English</a>
 							</li>
 						</ul>
 					</nav>
@@ -57,16 +60,19 @@
 					<div class="contacts">
 						<h3 class="subtitle" id="one">Contacts</h3>
 						<ul class="contacts__list">
-							<li class="list__item"><img src="./img/27_104849.png" width="24" height="24" alt="location"> Thurles,
+							<li class="list__item contacts__item"><img src="./img/27_104849.png" width="24" height="24"
+									alt="location"> Thurles,
 								Irish </li>
-							<li class="list__item"><img src="./img/Phone_43546.png" width="24" height="24" alt="Phone"><a
-									class="item__link" href="tel:+353857371699">+353857371699</a></li>
-							<li class="list__item"><img src="./img/email_green_23345.png" width="24" height="24" alt="email"><a
-									class="item__link" href="mailto:susannadidenko@gmail.com">Email Me</a></li>
-							<li class="list__item"><img src="./img/sociall/github_original_wordmark_logo_icon_146506.png" width="24"
-									height="24" alt="logo_github"><a class="item__link" target="_blank"
+							<li class="list__item contacts__item"><img src="./img/Phone_43546.png" width="24" height="24"
+									alt="Phone"><a class="item__link contacts__item" href="tel:+353857371699">+353857371699</a></li>
+							<li class="list__item contacts__item"><img src="./img/email_green_23345.png" width="24" height="24"
+									alt="email"><a class="item__link contacts__item" href="mailto:susannadidenko@gmail.com">Email Me</a>
+							</li>
+							<li class="list__item contacts__item"><img
+									src="./img/sociall/github_original_wordmark_logo_icon_146506.png" width="24" height="24"
+									alt="logo_github"><a class="item__link" target="_blank"
 									href="https://github.com/rolling-scopes-school/cycdid-JSFEPRESCHOOL2022Q4.git">Cycdid</a></li>
-							<li class="list__item list__item--green"><img
+							<li class="list__item contacts__item"><img
 									src="./img/sociall/discord_social_network_interaction_communication_social_media_icon_196624.png"
 									width="24" height="24" alt="discord"> susanna#2096</li>
 						</ul>
@@ -77,7 +83,7 @@
 				<div class="container">
 					<div class="about-me">
 						<h3 class="subtitle" id="two">About Me</h3>
-						<p class="about-me__text">
+						<p class="text">
 							I have good interpersonal skills, am an excellent team worker and very willing to learn and develop new
 							skills. I am happy to acquire new knowledge and skills. I am a permanent student of the Training courses.
 						</p>
@@ -95,6 +101,10 @@
 				<div class="container">
 					<div class="work-experience">
 						<h3 class="subtitle" id="three">Work experience</h3>
+						<p class="text">
+							Training courses less than 1 year. Search for information, teamwork. Eight teaching experience gave
+							experience in multitasking.
+						</p>
 					</div>
 				</div>
 			</section>
@@ -117,13 +127,11 @@
 					<div class="example">
 						<h3 class="subtitle" id="file">Code example</h3>
 						<code>
-							<pre>
-							function multiply (a, b) {
-							return a * b
-							} 
+						function multiply (a, b) { <br>
+						return a * b
+				    } <br> <br>
 					
-							const multiply = (a, b) => a * b
-							</pre>
+				    const multiply = (a, b) => a * b
 						</code>
 					</div>
 				</div>
@@ -137,9 +145,14 @@
 							<li class="list__item"><span class="b">University:</span> Mariupol University of Humanities</li>
 							<li class="list__item"><span class="b">Courses:</span>
 								<ul class="education__sub-list">
-									<li class="list__item"><a class="item__link" target="_blank" href="https://code-basics.com/ru">Code Basics</a></li>
-									<li class="list__item"><a class="item__link" target="_blank" href="https://rs.school/js/">RSschool</a></li>
-									<li class="list__item"><a class="item__link" target="_blank" href="https://loftschool.com/">Loftschool</a></li>
+									<li class="list__item"><a class="item__link" title="click me" target="_blank"
+											href="https://rs.school/js/">RSschool</a>
+									</li>
+									<li class="list__item"><a class="item__link" title="click me" target="_blank"
+											href="https://code-basics.com/ru">Code
+											Basics</a></li>
+									<li class="list__item"><a class="item__link" title="click me" target="_blank"
+											href="https://loftschool.com/">Loftschool</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -151,14 +164,14 @@
 					<div class="certificats">
 						<h3 class="subtitle" id="seven">Certificats</h3>
 						<ul class="certificats__list">
-							<li class="list__item"><a class="item__link" target="_blank" href="./certificate/Certificate.pdf">"ЦИФРОВІ
-									КОМУНІКАЦІЇ В ГЛОБАЛЬНОМУ ПРОСТОРІ"</a></li>
-							<li class="list__item"><a class="item__link" target="_blank"
-									href="./certificate/Certificate (2).pdf">"Нативна
-									реклама"</a>
+							<li class="list__item"><a class="item__link" title="click me" target="_blank"
+									href="./certificate/Certificate.pdf">"Digital connunications in the global space"</a></li>
+							<li class="list__item"><a class="item__link" title="click me" target="_blank"
+									href="./certificate/Certificate (2).pdf">"Native
+									advertising"</a>
 							</li>
-							<li class="list__item"><a class="item__link" target="_blank"
-									href="https://loftschool.com/diploma/MY1656400224/en/pdf">"Основы вёрстки"</a></li>
+							<li class="list__item"><a class="item__link" title="click me" target="_blank"
+									href="https://loftschool.com/diploma/MY1656400224/en/pdf">"Layout basics"</a></li>
 						</ul>
 					</div>
 				</div>
@@ -167,14 +180,18 @@
 				<div class="container">
 					<div class="english">
 						<h3 class="subtitle" id="eight">English</h3>
-						A1 / progress:
+						<p class="text">
+							A1 / progress:
+						</p>
 						<ul class="english__list">
-							<li class="list__item list"><img src="./img/progres/book_1426.png" alt="book_icon"> Books (Reading in
+							<li class="list__item list"><img width="24" height="24" src="./img/progres/book_1426.png" alt="book_icon">
+								Books (Reading in
 								English)</li>
-							<li class="list__item list"><img
+							<li class="list__item list"><img width="24" height="24"
 									src="./img/progres/online_cart_ecommerce_shop_shopping_learning_icon_226279.png" alt="learning_icon">
 								Courses (English courses)</li>
-							<li class="list__item list"><img src="./img/progres/1488492633-people03_81716.png" alt=""> Communication
+							<li class="list__item list"><img width="24" height="24" src="./img/progres/1488492633-people03_81716.png"
+									alt=""> Communication
 								(Communication with native English speakers)</li>
 						</ul>
 					</div>
@@ -182,54 +199,46 @@
 			</section>
 		</main>
 	</div>
+
 	<footer class="footer">
-		<div class="container">
-			<div class="footer__content">
-				<div class="footer__left">
-					<nav class="footer__menu">
-						<address class="footer__contact">
-							<img src="./img/Phone_43546.png" width="24" height="24" alt="Phone"><a
-									class="item__link" href="tel:+353857371699">+353857371699</a>
-							<img src="./img/email_green_23345.png" width="24" height="24" alt="email"><a
-									class="item__link" href="mailto:susannadidenko@gmail.com">Email Me</a>
-						</address>
-						<ul class="footer__list">
-							<li class="list__item list">
-								<a class="item__link" target="_blank"
-									href="https://github.com/rolling-scopes-school/cycdid-JSFEPRESCHOOL2022Q4.git">
-									<img src="./img/sociall/github-mark.svg" width="24" height="24" alt="Github">
-								</a>
-							</li>
-							
-							<li class="list__item list">
-								<a class="item__link" target="_blank" href="https://www.instagram.com/s_uza_nna/">
-									<img src="./img/sociall/instagram_ig_logo_mint_icon_134942.png" width="24" height="24"
-										alt="instagram">
-								</a>
-							</li>
-							<li class="list__item list">
-								<a class="item__link" target="_blank" href="#">
-									<img src="./img/sociall/facebook_fb_logo_mint_icon_134940.png" width="24" height="24" alt="facebook">
-								</a>
-							</li>
-							<li class="list__item list">
-								<a class="item__link" target="_blank" href="#">
-									<img src="./img/sociall/vk_logo_icon_186923.png" width="24" height="24" alt="vk">
-								</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="footer__rignt">
-					<div class="footer__logo">
-						<a class="footer__link item__link" target="_blank" href="https://rs.school/js/">
-							<img src="./img/sociall/rs_school_js.svg" width="48" height="24" alt="logo rsschool">
+		<div class="container footer__container footer__container-border">
+			<div class="footer__left">
+				<a class="footer__logo item__link" target="_blank" href="https://rs.school/js/">
+					<img src="./img/sociall/rs_school_js.svg" width="48" height="24" alt="logo rsschool">
+				</a>
+				<ul class="socials">
+					<li class="socials__item">
+						<a class="item__link" target="_blank"
+							href="https://github.com/rolling-scopes-school/cycdid-JSFEPRESCHOOL2022Q4.git">
+							<img src="./img/sociall/github-mark.svg" width="24" height="24" alt="Github">
 						</a>
-					</div>
-					<time datetime="2022-12-14">14.12.2022</time>
-				</div>
+					</li>
+					<li class="socials__item">
+						<a class="item__link" target="_blank" href="#">
+							<img src="./img/sociall/instagram_ig_logo_mint_icon_134942.png" width="24" height="24" alt="instagram">
+						</a>
+					</li>
+					<li class="socials__item">
+						<a class="item__link" target="_blank" href="#">
+							<img src="./img/sociall/facebook_fb_logo_mint_icon_134940.png" width="24" height="24" alt="facebook">
+						</a>
+					</li>
+					<li class="socials__item">
+						<a class="item__link" target="_blank" href="#">
+							<img src="./img/sociall/vk_logo_icon_186923.png" width="24" height="24" alt="vk">
+						</a>
+					</li>
+				</ul>
 			</div>
-		</div>
+			<div class="footer__right">
+				<address class="footer__contact">
+					<img class="footer__img" src="./img/Phone_43546.png" width="24" height="24" alt="Phone"><a class="item__link footer__link"
+						href="tel:+353857371699">+353857371699</a>
+					<img class="footer__img" src="./img/email_green_23345.png" width="24" height="24" alt="email"><a class="item__link footer__link"
+						href="mailto:susannadidenko@gmail.com">Email Me</a>
+				</address>
+				<time datetime="2022-12-14">14.12.2022</time>
+			</div>
 		</div>
 	</footer>
 </body>
