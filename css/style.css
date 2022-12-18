@@ -1,5 +1,24 @@
-*, *::before, *::after {
-	box-sizing: inherit;
+
+ @font-face {
+  font-family: 'Alegreya Sans';
+  src: url("assets/fonts/AlegreyaSans-Medium.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  src: url("assets/fonts/AlegreyaSans-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  src: url("assets/fonts/AlegreyaSans-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 * {
@@ -7,41 +26,35 @@
 	margin: 0;
 }
 
-img {
-	vertical-align: top;
-}
-
 html, body {
 	height: 100%;
 }
 
 body {
-	font: 400 16px/1.5 'Verdana', sans-serif;
+	font: 400 16px/1.5 'Alegreya Sans', sans-serif;
 	width: 100%;
-	margin: 0;
+	cursor: pointer;
 }
 
 .wrapper {
 	width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   overflow: hidden;
 	display: flex;
   flex-direction: column;
-	position: relative;
-
+	justify-content: space-between;
 }
 
 .section {
 	margin-bottom: 30px;
-	
+	background-color: rgba(51, 197, 40, 0.2);
+	padding: 30px;
 }
 
 .container {
-	max-width: 940px;
+	max-width: 1440px;
   margin: 0 auto;
-	background-color: rgba(51, 197, 40, 0.2);
-	padding: 30px;
-
+	
 }
 
 .header {
@@ -49,7 +62,7 @@ body {
 	flex-direction: column;
 	padding: 30px;
 	margin: 30px 0;
-	background-image: url(../img/bg.jpg);
+	background-image: url(../assets/img/bg.jpg);
 	background-position: 20% 0;
 }
 
@@ -80,6 +93,11 @@ body {
 
 .headline {
 	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.heading {
+	font-weight: 700;
 }
 
 .menu__list {
@@ -105,7 +123,7 @@ body {
 .menu__link {
 	text-decoration: none;
 	color: #fff;
-	font-weight: 700;
+	font-weight: 800;
 	text-shadow: 4px 4px 0 #9a9a9a;
 }
 
@@ -113,7 +131,6 @@ body {
 	color: rgba(51, 197, 40);
 	text-shadow: 1px 1px #fff;
 	transition-duration: 0.3s;
-	
 }
 
 .subtitle {
@@ -121,7 +138,7 @@ body {
 	color: rgba(51, 197, 40);
 	padding-bottom: 30px;
 	position: relative;
-	font-weight: 700;
+	font-weight: 800;
 	text-transform: uppercase;
 	margin-bottom: 30px;
 }
@@ -143,7 +160,7 @@ body {
 .minititle {
 	text-align: center;
 	color: rgba(51, 197, 40);
-	font-weight: 600;
+	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 30px;
 }
@@ -164,8 +181,9 @@ body {
 }
 
 .footer__container-border {
-	border-top: 1px solid #9a9a9a;
+	border-top: 3px solid #9a9a9a;
 }
+
 .footer__container {
 	display: flex;
   align-items: center;
@@ -175,16 +193,22 @@ body {
 .footer__left {
 	display: flex;
 	align-items: center;
-	
 }
 
 .footer__logo {
 	margin-right: 100px;
 }
 
+.footer__logo-img:hover {
+	filter: blur(3px);
+}
+
 .socials {
 	display: flex;
-	
+}
+
+.socials__item:hover {
+	filter: blur(3px);
 }
 
 .socials__item {
@@ -199,13 +223,19 @@ body {
 
 .footer__contact {
 	margin-right: 50px;
+	display: flex;
 }
 
 .footer__img {
 	margin-right: 10px;
+	align-items: center;
 }
 
 .footer__link {
 	margin-right: 20px;
 	font-style: normal;
 }
+
+.mycontent::after{
+	content: "\00A0 \00A9 \00A0 2022 Cycdid"; 
+}   
