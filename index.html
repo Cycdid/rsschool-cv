@@ -1,12 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link type="Image/x-icon" href="./assets/img/favicon-16x16.png" rel="icon">
 	<title>CV</title>
 </head>
+
 <body>
-	<p>Susanna Didenko</p>
+	<div class="wrapper">
+		<section class="section">
+			<div class="container">
+				<header class="header">
+					<div class="header__content">
+						<div class="header__wrapp-img">
+							<img class="header__img" src="./assets/img/ava.webp" alt="avatar">
+						</div>
+						<h1 class="headline">Susanna Didenko</h1>
+						<h2 class="heading">Frontend developer</h2>
+					</div>
+					<nav class="header__menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#one" class="menu__link">Contacts</a>
+							</li>
+							<li class="menu__item">
+								<a href="#two" class="menu__link">About Me</a>
+							</li>
+							<li class="menu__item">
+								<a href="#three" class="menu__link">Work experience</a>
+							</li>
+							<li class="menu__item">
+								<a href="#four" class="menu__link">Skills</a>
+							</li>
+							<li class="menu__item">
+								<a href="#five" class="menu__link">Code example</a>
+							</li>
+							<li class="menu__item">
+								<a href="#six" class="menu__link">Experience</a>
+							</li>
+							<li class="menu__item">
+								<a href="#seven" class="menu__link">Certificat</a>
+							</li>
+							<li class="menu__item">
+								<a href="#eight" class="menu__link">English</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+		</section>
+		<main class="maincontent">
+			<section class="section">
+				<div class="container">
+					<div class="contacts">
+						<h3 class="subtitle" id="one">Contacts</h3>
+						<ul class="contacts__list">
+							<li class="list__item contacts__item"><img src="./assets/img/svg/27_104849.png" width="24" height="24"
+									alt="location"> Thurles,
+								Irish </li>
+							<li class="list__item contacts__item"><img src="./assets/img/svg/Phone_43546.png" width="24" height="24"
+									alt="Phone"><a class="item__link contacts__item" href="tel:+353857371699">+353857371699</a></li>
+							<li class="list__item contacts__item"><img src="./assets/img/svg/email_green_23345.png" width="24"
+									height="24" alt="email"><a class="item__link contacts__item"
+									href="mailto:susannadidenko@gmail.com">Email Me</a>
+							</li>
+							<li class="list__item contacts__item"><img
+									src="./assets/img/sociall/github_original_wordmark_logo_icon_146506.png" width="24" height="24"
+									alt="logo_github"><a class="item__link" target="_blank"
+									href="https://github.com/rolling-scopes-school/cycdid-JSFEPRESCHOOL2022Q4.git">Cycdid</a></li>
+							<li class="list__item contacts__item"><img
+									src="./assets/img/sociall/discord_social_network_interaction_communication_social_media_icon_196624.png"
+									width="24" height="24" alt="discord"> susanna#2096</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="about-me">
+						<h3 class="subtitle" id="two">About Me</h3>
+						<p class="text">
+							I have good interpersonal skills, am an excellent team worker and very willing to learn and develop new
+							skills. I am happy to acquire new knowledge and skills. I am a permanent student of the Training courses.
+						</p>
+						<h4 class="minititle">My positive qualities</h4>
+						<ul class="about-me__list">
+							<li class="list__item">I am able to handle multiple tasks on a daily basis</li>
+							<li class="list__item">I use a creative approach to problem solve</li>
+							<li class="list__item">I am always energetic and eager to learn new skills</li>
+							<li class="list__item">I have experience working as part of a team and individually</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="work-experience">
+						<h3 class="subtitle" id="three">Work experience</h3>
+						<p class="text">
+							Training courses less than 1 year. Search for information, teamwork. Eight teaching experience gave
+							experience in multitasking.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="skills">
+						<h3 class="subtitle" id="four">Skills</h3>
+						<ul class="skills__list">
+							<li class="list__item"> HTML (BEM / Flex)</li>
+							<li class="list__item"> CSS (Animation)</li>
+							<li class="list__item"> CSS preprocessor (SASS / Less)</li>
+							<li class="list__item"> Prepros (file compiler for front-end development)</li>
+							<li class="list__item"> Git / GitHub</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="example">
+						<h3 class="subtitle" id="file">Code example</h3>
+						<code>
+						function multiply (a, b) { <br>
+						return a * b
+				    } <br> <br>
+					
+				    const multiply = (a, b) => a * b
+						</code>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="experience">
+						<h3 class="subtitle" id="six">Experience</h3>
+						<h4 class="minititle">Education</h4>
+						<ul class="experience__list">
+							<li class="list__item"><span class="b">University:</span> Mariupol University of Humanities</li>
+							<li class="list__item"><span class="b">Courses:</span>
+								<ul class="education__sub-list">
+									<li class="list__item"><a class="item__link" title="click me" target="_blank"
+											href="https://rs.school/js/">RS school</a>
+									</li>
+									<li class="list__item"><a class="item__link" title="click me" target="_blank"
+											href="https://code-basics.com/ru">Code Basics</a></li>
+									<li class="list__item"><a class="item__link" title="click me" target="_blank"
+											href="https://loftschool.com/">Loft school</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="certificats">
+						<h3 class="subtitle" id="seven">Certificats</h3>
+						<ul class="certificats__list">
+							<li class="list__item"><a class="item__link" title="click me" target="_blank"
+									href="./assets/certificate/Certificate.pdf">"Digital connunications in the global space"</a></li>
+							<li class="list__item"><a class="item__link" title="click me" target="_blank"
+									href="./assets/certificate/Certificate (2).pdf">"Native
+									advertising"</a>
+							</li>
+							<li class="list__item"><a class="item__link" title="click me" target="_blank"
+									href="https://loftschool.com/diploma/MY1656400224/en/pdf">"Layout basics"</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="english">
+						<h3 class="subtitle" id="eight">English</h3>
+						<p class="text">
+							A1 Beginner:
+						</p>
+						<ul class="english__list">
+							<li class="list__item list"><img width="24" height="24" src="./assets/img/english/book_1426.png"
+									alt="book_icon">
+								Books (Reading in English)</li>
+							<li class="list__item list"><img width="24" height="24"
+									src="./assets/img/english/online_cart_ecommerce_shop_shopping_learning_icon_226279.png"
+									alt="learning_icon">
+								Courses (English courses)</li>
+							<li class="list__item list"><img width="24" height="24"
+									src="./assets/img/english/1488492633-people03_81716.png" alt=""> Communication
+								(Communication with native English speakers)</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<footer class="footer footer__container-border">
+		<section class="section ">
+			<div class="container footer__container ">
+				<div class="footer__left">
+					<a class="footer__logo item__link" target="_blank" href="https://rs.school/js/">
+						<img class="footer__logo-img" src="./assets/img/sociall/rs_school_js.svg" width="48" height="24" alt="logo rsschool">
+					</a>
+					<ul class="socials">
+						<li class="socials__item">
+							<a class="item__link" target="_blank"
+								href="https://github.com/rolling-scopes-school/cycdid-JSFEPRESCHOOL2022Q4.git">
+								<img src="./assets/img/sociall/github-mark.svg" width="24" height="24" alt="Github">
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="item__link" target="_blank" href="#">
+								<img src="./assets/img/sociall/instagram_ig_logo_mint_icon_134942.png" width="24" height="24"
+									alt="instagram">
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="item__link" target="_blank" href="#">
+								<img src="./assets/img/sociall/facebook_fb_logo_mint_icon_134940.png" width="24" height="24"
+									alt="facebook">
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="item__link" target="_blank" href="#">
+								<img src="./assets/img/sociall/vk_logo_icon_186923.png" width="24" height="24" alt="vk">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__right">
+					<address class="footer__contact">
+						<img class="footer__img" src="./assets/img/svg/Phone_43546.png" width="24" height="24" alt="Phone"><a
+							class="item__link footer__link" href="tel:+353857371699">+353857371699</a>
+						<img class="footer__img" src="./assets/img/svg/email_green_23345.png" width="24" height="24" alt="email"><a
+							class="item__link footer__link" href="mailto:susannadidenko@gmail.com">Email Me</a>
+					</address>
+					<div class="mycontent"></div>
+				</div>
+			</div>
+		</section>
+	</footer>
 </body>
+
 </html>
