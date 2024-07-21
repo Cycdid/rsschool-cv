@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=1140">
+	<meta name="viewport" content="width=1280">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<title>CV</title>
@@ -12,38 +12,36 @@
 <body>
 	<div class="wrapper">
 		<div class="wrapper__content">
-
 			<header class="header">
 				<div class="header__bg">
 					<div class="container">
-						<div class="header__top">
-
+						<div class="header__top-line">
 							<address class="contacts">
 								<div class="contacts__title"> Contact information </div>
-
 								<ul class="contacts__list">
 									<li class="contacts__item">
-										<a class="contacts__link" href="tel:+3530857371699">
-											<img class="contacts__icon" src="/rsschool-cv/img/phone-round.svg" width="28" height="28" alt="phone">
+										<a class="contacts__link tooltip" href="tel:+3530857371699" data-tooltip="Click on me">
+											<img class="contacts__icon" src="img/phone-round.svg" width="28" height="28"
+												alt="phone">
 											<div class="info"> +353 85 737 16 99 </div>
 										</a>
 									</li>
 									<li class="contacts__item">
-										<a class="contacts__link" href="mailto:didenkosysanna@gmail.com">
-											<img class="contacts__icon" src="/rsschool-cv/img/email-black.svg" width="28" height="28" alt="email">
+										<a class="contacts__link tooltip" href="mailto:didenkosysanna@gmail.com" data-tooltip="Click on me">
+											<img class="contacts__icon" src="img/email-black.svg" width="28" height="28"
+												alt="email">
 											<div class="info"> didenkosysanna@gmail.com </div>
 										</a>
 									</li>
 									<li class="contacts__item">
 										<div class="contacts__link">
-											<img class="contacts__icon" src="/rsschool-cv/img/discord_logo.svg" width="28" height="28" alt="discord">
+											<img class="contacts__icon" src="img/discord_logo.svg" width="28" height="28"
+												alt="discord">
 											<div class="info"> susanna2096 </div>
 										</div>
 									</li>
-									
 								</ul>
 							</address>
-
 							<nav class="menu">
 								<ul class="menu__list">
 									<li class="menu__item">
@@ -66,33 +64,26 @@
 									</li>
 								</ul>
 							</nav>
-
 						</div>
 					</div>
 				</div>
 				<div class="container">
 					<div class="header__content">
-
 						<div class="header__avatar">
-							<img class="header__img" src="/rsschool-cv/img/avatar.jpg" width="720" height="720" alt="avatar">
+							<img class="header__img" src="img/avatar.jpg" width="720" height="720" alt="avatar">
 						</div>
-
 						<div class="header__caption">
-							<h1 class="title header__title"> Susanna Didenko </h1>
-							<h2 class="subtitle header__subtitle">Junior Frontend Developer</h2>
+							<h1 class="title"> Susanna Didenko </h1>
+							<h2 class="subtitle">Junior Frontend Developer</h2>
 						</div>
 					</div>
-
 				</div>
 			</header>
-
 			<main class="main">
 				<div class="container">
-
-					<section class="section">
-						<h3 class="heading" id="part1"> About myself </h3>
-
-						<div class="content">
+					<section class="section" id="part1">
+						<h3 class="heading" > About myself </h3>
+						<div class="about-content">
 							<p> I have good interpersonal skills, am an excellent team worker and very willing to learn and develop
 								new skills.
 								I am reliable and dependable and often seek new responsibilities within a wide range of employment
@@ -100,30 +91,34 @@
 							</p>
 						</div>
 					</section>
-
-					<section class="section">
-						<h3 class="heading" id="part2"> Education </h3>
-
-						<div class="content">
-							<h3 class="caption">University:</h3>
-							<ul class="content__list">
-								<li class="content__item"> <a href="https://mu.edu.ua/en"> Mariupol State University </a> </li>
+					<section class="section" id="part2">
+						<h3 class="heading"> Education </h3>
+						<div class="education-content">
+							<h4 class="caption">University:</h4>
+							<ul class="education-content__list">
+								<li class="education-content__item">
+									<a class="education-content__link" href="https://mu.edu.ua/en" target="_blank"> Mariupol State University </a>
+								</li>
 							</ul>
-							<h3 class="caption">Courses:</h3>
-							<ul class="content__list">
-								<li class="content__item"> <a href="https://www.w3schools.com/html/"> HTML and CSS Tutorials on the
-										w3schools </a> (completed) </li>
-								<li class="content__item"> <a href="https://learn.javascript.ru/"> JavaScript Manual on
-										learnjavascript.ru </a> (in progress) </li>
-								<li class="content__item"> <a href="https://rs.school/courses/javascript"> RS Schools Course
-										«JavaScript/Front-end. Stage 0» </a> (in progress) </li>
+							<h4 class="caption">Courses:</h4>
+							<ul class="education-content__list">
+								<li class="education-content__item"> 
+									<a class="education-content__link" href="https://www.w3schools.com/html/" target="_blank"> HTML and CSS Tutorials on the w3schools </a>
+									(completed) 
+								</li>
+								<li class="education-content__item"> 
+									<a class="education-content__link" href="https://learn.javascript.ru/" target="_blank"> JavaScript Manual on learnjavascript.ru </a>
+									(in progress) 
+								</li>
+								<li class="education-content__item">
+									<a class="education-content__link" href="https://rs.school/courses/javascript" target="_blank"> RS Schools Course «JavaScript/Front-end. Stage 0» </a>
+									(in progress)
+								</li>
 							</ul>
 						</div>
 					</section>
-
-					<section class="section">
-						<h3 class="heading" id="part3"> Knowledge and skills </h3>
-
+					<section class="section" id="part3">
+						<h3 class="heading"> Knowledge and skills </h3>
 						<div class="content">
 							<ul>
 								<li>HTML5 (BEM methodology).</li>
@@ -137,12 +132,10 @@
 							</ul>
 						</div>
 					</section>
-
-					<section class="section">
-						<h3 class="heading" id="part4"> Code example: </h3>
-
+					<section class="section" id="part4">
+						<h3 class="heading"> Code example: </h3>
 						<div class="content">
-							<h3 class="caption"> My first expression: </h3>
+							<h4 class="caption"> My first expression: </h4>
 							<pre class="example">
 								<code class="first-expression:"> 
 	Let youLoveMe = true;
@@ -155,30 +148,25 @@
 						</pre>
 						</div>
 					</section>
-
-					<section class="section">
-						<h3 class="heading" id="part5"> My projects </h3>
-
+					<section class="section" id="part5">
+						<h3 class="heading"> My projects </h3>
 						<div class="content">
 							<ul class="projects__list">
 								<li class="projects__item">
-									<a class="projects__link" href="https://celadon-peony-6eacbc.netlify.app" target="_blank"
-										title="Banderogus">
-										<img src="/rsschool-cv/img/img-project.jpg" width="633" height="302" alt="img-project">
+									<a class="projects__link tooltip" href="https://celadon-peony-6eacbc.netlify.app" target="_blank" data-tooltip="Click on me">
+										<img src="img/img-project.jpg" width="633" height="302" alt="img-project">
 									</a>
 								</li>
 								<li class="projects__item">
-									<a class="projects__link" href="https://cycdid.github.io/Quiz-box/" target="_blank" title=" Quiz-box">
-										<img src="/rsschool-cv/img/quiz-box.jpg" width="540" height="301" alt="quiz-box">
+									<a class="projects__link tooltip" href="https://cycdid.github.io/Quiz-box/" target="_blank" data-tooltip="Click on me">
+										<img src="img/quiz-box.jpg" width="540" height="301" alt="quiz-box">
 									</a>
 								</li>
 							</ul>
-
 						</div>
 					</section>
-					<section class="section">
-						<h3 class="heading" id="part6"> Languages </h3>
-
+					<section class="section" id="part6">
+						<h3 class="heading"> Languages </h3>
 						<div class="content">
 							<ul>
 								<li> Russian - Native </li>
@@ -187,47 +175,34 @@
 							</ul>
 						</div>
 					</section>
-
 				</div>
 			</main>
-
 		</div>
-
 		<footer class="footer">
 			<div class="container">
-
 				<nav class="footer__menu">
 					<ul class="footer__menu__list">
 						<li class="footer__menu__item">
 							<a class="footer__menu__link" href="https://rs.school/courses/javascript" target="_blank">
-								<img class="footermenu__img" src="/rsschool-cv/img/rs-school-logo.svg" width="150" height="100"
-									alt="logo">
+								<img class="footermenu__img" src="img/rs-school-logo.svg" width="150" height="100" alt="logo">
 							</a>
 						</li>
 						<li class="footer__menu__item">
-							<a class="footer__menu__link" href="https://github.com/Cycdid" target="_blank">
-								<img class="footer__menu__img" src="/rsschool-cv/img/github-black.svg" width="60" height="60"
-									alt="github">
-							</a>
+							<a class="footer__menu__link footer__menu__link--github" href="https://github.com/Cycdid" target="_blank"></a>
 						</li>
 						<li class="footer__menu__item">
-							<a class="footer__menu__link" href="#">
-								<img class="footer__menu__img" src="/rsschool-cv/img/telegram-black.svg" width="48" height="48"
-									alt="telegram">
-							</a>
+							<a class="footer__menu__link footer__menu__link--telegram" href="#" target="_blank"></a>
 						</li>
 						<li class="footer__menu__item">
 							<div class="footer__menu__link">
-								<img class="footer__menu__img" src="/rsschool-cv/img/date-black.svg" width="46" height="46" alt="date">
+								<img class="footer__menu__img" src="img/date-black.svg" width="46" height="46" alt="date">
 								<div class="copyright"> &#169; 2024 </div>
 							</div>
 						</li>
 					</ul>
 				</nav>
-
 			</div>
 		</footer>
-
 	</div>
 </body>
 
