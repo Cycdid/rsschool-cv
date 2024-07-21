@@ -1,12 +1,14 @@
-html {
+html, 
+body {
 	height: 100%;
 }
 
 body {
-	min-width: 1140px;
 	font: 500 16px / 1.42 'Open Sans', Helvetica, sans-serif;
 	color: #4a545d;
-	background: url('/rsschool-cv/img/white-bg.jpg');
+	background: url('../img/white-bg.jpg');
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -15,47 +17,65 @@ body {
 	padding: 0;
 }
 
-h1,
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1, 
 h2, 
 h3, 
 h4, 
 h5, 
 h6 {
 	font-weight: normal;
-}
+ }
 
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-img {
-	display: block;
+ img {
 	max-width: 100%;
+	/*vertical-align: top;*/
 }
 
-.content p {
-	text-indent: 50px;
+.tooltip {
+  position: relative;
+  text-decoration: none; 
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+	display: none; 
+  bottom: 30px; 
+  left: 70%;
+  z-index: 100; 
+  padding: 5px 10px;
+	color: #4a545d;
+	border: 1px solid #4a545d;
+  border-radius: 50%;
+	background: #fff;
+  white-space: nowrap;
+}
+
+.tooltip:hover::after {
+  display: block; 
 }
 
 .wrapper {
 	display: flex;
 	flex-direction: column;
+	min-width: 1280px;
 	min-height: 100%;
-	overflow: hidden;
+	overflow: hidden;;
 }
 
 .wrapper__content {
-	display: flex;
-	flex-direction: column;
 	flex: 1;
-	min-height: 100%;
 }
 
 .container {
-	max-width: 1140px;
+	width: 1280px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 20px;
 }
 
 .title {
@@ -67,22 +87,10 @@ img {
 }
 
 .heading {
+	margin-bottom: 30px;
 	text-align: center;
+	text-transform: uppercase;
 	font-weight: 600;
-}
-
-.heading::before {
-	content: "";
-	display: block;
-	height: 3px; 
-	width: 50px; 
-	margin: 0 auto 10px; 
-	background: rgba(181,198,208,5); 
-	transition: all 0.8s ease 0s; 
-}
-
-.heading:hover:before {
-	width: 130px; 
 }
 
 .caption {
@@ -91,6 +99,7 @@ img {
 
 .header {
 	margin-bottom: 50px;
+	height: 100vh;
 }
 
 .header::after {
@@ -106,15 +115,12 @@ img {
 	background: linear-gradient(135deg,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
 }
 
-.header__top {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 0;
-	margin-bottom: 80px;
+.header__top-line {
 	min-height: 100px;
+	padding: 20px 0;
 }
 
+.header__top-line,
 .header__content {
 	display: flex;
 	justify-content: space-evenly;
@@ -126,19 +132,19 @@ img {
 	width: 250px;
 	height: 300px;
 	border-radius: 50%;
-	box-shadow: 10px 10px 10px #4a545d ;
+	box-shadow: 10px 10px 10px #4a545d;
+	filter: grayscale(100%);
 	overflow: hidden;
+}
+
+.header__avatar:hover {
+	filter: grayscale(0);
 }
 
 .header__avatar .header__img {
 	height: 100%;
 	width: 100%;
 	object-fit:cover;
-	transition: all 0.8s ease 0s;
-}
-
-.header__img:hover {
-	transform: scale(1.5);
 }
 
 .header__caption {
@@ -148,7 +154,7 @@ img {
 	padding: 50px;
 	border: 2px solid #4a545d;
 	border-radius: 50%;
-	box-shadow: 10px 10px 10px #4a545d ;
+	box-shadow: 10px 10px 10px #4a545d;
 	background: linear-gradient(135deg,  rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%);
 	transition: all 0.8s ease 0s;
 }
@@ -160,7 +166,7 @@ img {
 .contacts {
 	display: flex;
 	flex-direction: column;
-	margin-right: 10px; 
+	align-items: center;
 	font-style: normal;
 	font-weight: 600;
 }
@@ -168,24 +174,37 @@ img {
 .contacts__title {
 	margin-bottom: 7px;
 	font-weight: 800;
-	text-indent: 20px;
 }
 
 .contacts__list {
 	list-style: none;
 }
 
+.contacts__link {
+	position: relative;
+	display: flex;
+}
+
 .contacts__icon {
 	margin-right: 5px;
-	transition: all 0.8s ease 0s;
 }
 
 .contacts__icon:last-child {
 	margin-right: 0;
 }
 
-.contacts__link {
-	display: flex;
+.info::after {
+	content: "";
+	display: block;
+	height: 3px; 
+	width: 50px; 
+	margin: 0 10px 10px; 
+	background: rgba(181,198,208,5); 
+	transition: all 0.8s ease 0s; 
+}
+
+.info:hover::after {
+	width: 130px; 
 }
 
 .menu__list {
@@ -202,12 +221,12 @@ img {
 }
 
 .menu__link {
-		color:#4a545d;
+		padding: 15px 8px; 
+		text-decoration: none;
 		background-size: 0 100%;
     border: 1px solid #4a545d;
-    border-radius: 4px;
-    text-decoration: none;
-    padding: 8px; 
+    border-radius: 50%;
+		box-shadow: 10px 10px 10px #4a545d;
     transition: 0.3s; 
 }
 
@@ -215,9 +234,8 @@ img {
 	font-weight: 600;
 	text-transform: uppercase;
 	background-image: linear-gradient(to right, #feffff, #aebcbf); 
-	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	
+	background-repeat: no-repeat;
 }
 
 .main {
@@ -229,9 +247,8 @@ img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 150px;
-	margin-bottom: 30px;
-	padding: 30px;
+	height: 100vh;
+	padding: 0 15px;
 }
 
 .section:hover {
@@ -241,17 +258,30 @@ img {
 }
 
 .section:hover .heading {
-	text-transform: uppercase;
+	font-weight: 900;
 	color: #000;
 }
 
-.content {
-	margin-top: 30px;
+.about-content p {
+	text-indent: 50px;
+}
+
+.education-content__link::after {
+		content: "";
+		display: block;
+		height: 5px; 
+		width: 120px; 
+		margin: 0 10px 10px; 
+		background: rgba(181,198,208,5); 
+		transition: all 0.8s ease 0s; 
+	}
+	
+.education-content__link:hover::after {
+		width: 200px; 
 }
 
 .projects__list {
 	display: flex;
-	
 	list-style: none;
 }
 
@@ -265,11 +295,18 @@ img {
 }
 
 .projects__link {
-	display: block;
-	height: 200px;
+	position: relative;
+	display: flex;
+	height: 300px;
 	border-radius: 30px;
 	border: 3px solid #4a545d;
+	box-shadow: 10px 10px 10px #aebcbf;
 	overflow: hidden;
+	transition: all 0.8s ease 0s;
+}
+
+.projects__link:hover {
+	box-shadow: 0 0 0;
 }
 
 .projects__link img {
@@ -303,6 +340,29 @@ img {
 .footer__menu__link {
 	display: flex;
 	align-items: center;
-	gap: 10px;
 	font-weight: 600;
+}
+
+.footer__menu__link--github {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: url('../img/github_hover.svg') center / cover, no-repeat;
+}
+
+.footer__menu__link--github:hover {
+	background-image: url('../img/github-black.svg');
+	border: 3px solid #000;
+}
+
+.footer__menu__link--telegram {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: url('../img/telegram-black.svg') center / cover, no-repeat;
+}
+
+.footer__menu__link--telegram:hover {
+	background-image: url(../img/telegram_hover.svg);
+	border: 3px solid #000;
 }
